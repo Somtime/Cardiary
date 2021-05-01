@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
+
+/* 헤더 */
+header {
+	margin: 1%;
+	height: 20px;
+	width: 100%;
+}
+
+#logo {
+	margin: 1%g;
+	float: left;
+}
+
+#menu {
+	margin: 1%;
+	float: right;
+}
+
+#menu img {
+	clear: both;
+	border-radius: 50%;
+}
+/* 헤더 끝 */
+
+/* 공통 */
+body {
+	margin: auto;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	background-color: #000;
+	background-image: url("../../images/bg.jpg");
+	background-size: cover;
+	background-position: top center;
+	justify-content: center;
+	vertical-align: middle;
+}
+
+section {
+	width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+div#wrap {
+	margin: auto;
+	width: 70%;
+}
+/* 공통 끝 */
+
+/* 카드 리스트, 카드 */
+div#card {
+	margin: 5% auto;
+	background: rgba(252, 252, 254, 0.6);
+	width: 60%;
+	max-width: 600px;
+	border-radius: 1%;
+}
+
+div#card_header {
+	height: 30%;
+}
+ 
+div#card_image_member {
+	float: left;
+	width: 40px;
+	height: 40px;
+	padding: 2%;
+}
+
+div#card_id {
+	float: left;
+	padding: 3%;
+    font-size: 1.1em;
+}
+
+div#card_heart {
+	float: right;
+    padding: 2%;
+}
+
+div #card_image_member img{
+	border: solid 5px rgba(255, 255, 255, 0.075);
+	width: 100%;
+	border-radius: 50%;
+}
+
+div #card_image_card img {
+	width: 100%;
+}
+
+div #card_content_article {
+	padding: 5px 10px;
+	font-size: 0.5em;
+}
+
+div#card_content_article textarea {
+	border: none;
+    background: none;
+    width: 100%;
+}
+
+div#card_reply_image_member img {
+	width: 5%;
+	border-radius: 50%;
+	float: left;
+	padding: 2%;
+}
+
+div#card_reply_id {
+	padding: 2%;
+	padding-left: 1%;
+	float: left;
+}
+
+div#card_reply_article {
+	float: inherit;
+	padding: 2%;
+	font-size: 0.9em;
+	width: 100%;
+}
+
+div#card_reply_article textarea {
+	border: none;
+    background: none;
+    width: 78%;
+}
+
+div#card_button {
+	margin: 0.5%;
+    text-align: center;
+}
+
+div#card_button input[type="button"], div#card_button input[type="submit"] {
+	margin: 0 5%;
+	background: rgba(255, 255, 255, 0.075);
+	border-radius: 1%;
+	border: solid 1px rgba(255, 255, 255, 0.25);
+	color: inherit;
+	width: 30%;
+	height: 3em;
+}
+
+div#card_reply_content input[type="text"] {
+	margin: 1% 2%;
+	float: left;
+	margin: .5em auto;
+	background: rgba(255, 255, 255, 0.075);
+	border-radius: 1%;
+	border: solid 1px rgba(255, 255, 255, 0.25);
+	color: inherit;
+	padding: 0 1em;
+	width: 60%;
+	height: 3em;
+}
+
+div #reply_button{
+	float: left;
+    margin: 1.5% 2%;
+	background: rgba(255, 255, 255, 0.075);
+	border-radius: 1%;
+	border: solid 1px rgba(255, 255, 255, 0.25);
+	color: inherit;
+	width: 30%;
+	height: 3em;
+}
+
+#clear {
+	clear: both;
+}
+/* 카드 리스트 끝 */
+img#favorite_card {
+	width: 30%;
+	margin: 1%;	
+}
+
+/* 새 카드 만들기 */
+#new_card_image {
+	padding: 1%;
+}
+
+#new_card_content {
+	padding: 1%;
+}
+
+#new_card_content textarea{
+	width: 99%;
+	height: 5em;
+	background: inherit;
+}
+
+#new_card_submit {
+	padding: 1%;
+	float: right;
+}
+
+/* 새 카드 만들기 끝 */
+
+/* TODO : 헤더에서 new, friend 아이콘 변경 / 카드 배경 색 설정 */
