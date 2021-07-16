@@ -28,17 +28,17 @@ public class CardiaryServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// command¸¦ ÀÔ·Â¹ŞÀ» º¯¼ö
+		// commandë¥¼ ì…ë ¥ë°›ì„ ë³€ìˆ˜
 		String command = request.getParameter("command");
 		
-		// consoleÃ¢¿¡ Ä¿¸Çµå Ç¥½Ã
-		System.out.println("SnsServlet : " + command);
+		// consoleì°½ì— ì»¤ë§¨ë“œ í‘œì‹œ
+		System.out.println("CardiaryServlet : " + command);
 		
-		// ActionFactory¿¡ command º¯¼ö ÀÔ·Â
+		// ActionFactoryì— command ë³€ìˆ˜ ì…ë ¥
 		ActionFactory af = ActionFactory.getInstance();
 		Action action = af.getAction(command);
 		
-		// Action ½ÇÇà
+		// Action ì‹¤í–‰
 		if (action != null) {
 			action.execute(request, response);
 		}
